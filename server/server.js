@@ -8,7 +8,7 @@ app.use(express.static('server/public'));
 
 // ROUTES
 app.use('/koalas', koalaRouter);
-
+app.use(express.static('server/public'));
 // Start listening for requests on a specific port
 app.listen(PORT, () => {
   console.log('listening on port', PORT);
